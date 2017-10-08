@@ -1,5 +1,4 @@
 const triangleStars = function(h){
-
 	const inner = function(height){
 		if(height<=0)
 		return"";
@@ -19,7 +18,6 @@ const reverse = function(str){
 		if(index<0){
 			return "";
 		}
-		
 		return str[index]+func(index-1);
 	}
 	return func(str.length-1);
@@ -54,12 +52,10 @@ const boat = function(h){
 			return"";
 		return char+" "+str(num-1,char);
 	}
-	
 	const sail= function(n)
 	{
 		if(n>h/2)
 		return;
-	
 	console.log(str(h/2," ")+str(n,"*"));
 	sail(n+1);
 	}
@@ -82,7 +78,6 @@ const boat = function(h){
 		console.log(str(h+1-n," ")+str(n-(h-n)-1,"*"));
 		hull(n-1);
 	}
-	
 	sail(1);
 	mast(1);
 	hull(h+1);
